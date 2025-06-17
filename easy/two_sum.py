@@ -17,4 +17,10 @@ def two_sum(nums, target):
 
 def two_sum_optimized(nums, target):
     # Hashmap
-    ...
+    hashmap = {}
+    for x in range(0,len(nums)):
+        complement = target - nums[x]
+        if complement in hashmap:
+            return [hashmap[complement], x]
+        hashmap[nums[x]] = x
+    return[]
