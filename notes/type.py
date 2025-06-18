@@ -69,3 +69,23 @@ def format_msg()->str:
     return feedback
 
 print(format_msg())
+
+pairs = [(2, 3), (1, 5), (4, 1)]
+
+pairs.sort(key=lambda num: num[1], reverse=False)
+
+print(pairs)
+
+# Sort words = ["hello", "world", "python", "a", "banana"] by length descending
+
+words = ["hello", "world", "python", "a", "banana"]
+
+words.sort(key=lambda phrases : len(phrases), reverse=True)
+
+print(words)
+
+
+nums = list(range(100))    
+even = list(filter(lambda num : num % 2 == 0, nums))
+
+print(even)
