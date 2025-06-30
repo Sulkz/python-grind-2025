@@ -62,30 +62,35 @@ print(reversing_String("gallo",-2))
 
 
 
-def format_msg()->str:
-    name = input("Input your name: ")
-    age = input ("How old are you: ")
-    feedback = "Hello {} my child, what brings.\nYou here young padowan, oh wait ur how old? {} !! stop right there dawg!".format(name,age)
-    return feedback
+# def format_msg()->str:
+#     name = input("Input your name: ")
+#     age = input ("How old are you: ")
+#     feedback = "Hello {} my child, what brings.\nYou here young padowan, oh wait ur how old? {} !! stop right there dawg!".format(name,age)
+#     return feedback
 
-print(format_msg())
+# print(format_msg())
 
-pairs = [(2, 3), (1, 5), (4, 1)]
+# pairs = [(2, 3), (1, 5), (4, 1)]
 
-pairs.sort(key=lambda num: num[1], reverse=False)
+# pairs.sort(key=lambda num: num[1], reverse=False)
 
-print(pairs)
+# print(pairs)
 
-# Sort words = ["hello", "world", "python", "a", "banana"] by length descending
+# # Sort words = ["hello", "world", "python", "a", "banana"] by length descending
 
-words = ["hello", "world", "python", "a", "banana"]
+# words = ["hello", "world", "python", "a", "banana"]
 
-words.sort(key=lambda phrases : len(phrases), reverse=True)
+# words.sort(key=lambda phrases : len(phrases), reverse=True)
 
-print(words)
+# print(words)
 
 
-nums = list(range(100))    
-even = list(filter(lambda num : num % 2 == 0, nums))
+# nums = list(range(100))    
+# even = list(filter(lambda num : num % 2 == 0, nums))
 
-print(even)
+# print(even)
+# \
+    
+word = "sliceme"
+
+print(word[0:3])
