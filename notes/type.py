@@ -94,3 +94,11 @@ print(reversing_String("gallo",-2))
 word = "sliceme"
 
 print(word[0:3])
+
+car = "a"
+lard = "rac"
+
+if car in lard:
+    print("yes")
+else:
+    print("no")
