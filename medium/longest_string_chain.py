@@ -1,3 +1,9 @@
+"""
+Longest String Chain — LeetCode
+Builds longest word chain by removing 1 character at a time.
+DP + Hashmap. Sort words by length to ensure predecessors processed first.
+"""
+
 class Solution(object):
     def longestStrChain(words):
         # first sort words in ascending order
