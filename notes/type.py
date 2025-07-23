@@ -102,3 +102,15 @@ if car in lard:
     print("yes")
 else:
     print("no")
+
+
+
+class Car:
+    price = 10  
+    name = "lambo"
+    dealershipname = "huh"
+    mileage = 20000
+
+# calculator - which car is the most optimal to buy
+
+mileage/price

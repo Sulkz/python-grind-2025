@@ -8,11 +8,11 @@ class Solution(object):
         lp = 0
         for rp in range(len(s)):
             while s[rp] in memo:
-                #if the letter is already in the set then we reduce window but removing character at position lp
+                #if the letter is already in the set then we reduce window by removing character at position lp
                 memo.remove(s[lp])
                 lp += 1
             memo.add(s[rp])
-            #finding the lkenght of the subarray window
+            #finding the lenght of the subarray window
             max_len = max(max_len, rp -lp + 1)
         return max_len
     

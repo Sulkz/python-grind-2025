@@ -2,13 +2,7 @@
 Subarray Sums Divisible by K https://leetcode.com/problems/subarray-sums-divisible-by-k
 """
 
-
-
-
-
 from collections import defaultdict
-
-
 class Solution(object):
     def subarraysDivByK(self, nums, k):
         #intialise the count and sum and result
