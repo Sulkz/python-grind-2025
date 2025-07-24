@@ -91,26 +91,23 @@ print(reversing_String("gallo",-2))
 # print(even)
 # \
     
-word = "sliceme"
+# word = "sliceme"
 
-print(word[0:3])
+# print(word[0:3])
 
-car = "a"
-lard = "rac"
+# car = "a"
+# lard = "rac"
 
-if car in lard:
-    print("yes")
-else:
-    print("no")
+# if car in lard:
+#     print("yes")
+# else:
+#     print("no")
 
 
+te = [[9,1]]
+ye = [[10,3],[1,12]]
+ye.sort(key=lambda x:x[0])
+ye += te
+    
 
-class Car:
-    price = 10  
-    name = "lambo"
-    dealershipname = "huh"
-    mileage = 20000
-
-# calculator - which car is the most optimal to buy
-
-mileage/price
+print(ye)
