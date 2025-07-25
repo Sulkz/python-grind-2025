@@ -104,10 +104,12 @@ print(reversing_String("gallo",-2))
 #     print("no")
 
 
-te = [[9,1]]
-ye = [[10,3],[1,12]]
-ye.sort(key=lambda x:x[0])
-ye += te
-    
 
-print(ye)
+n = [1,2]
+n2 = [3,4]
+
+n.extend(n2)
+print(n[0])
+
+p = int(5/2)
+print(p)
