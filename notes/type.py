@@ -113,3 +113,10 @@ print(n[0])
 
 p = int(5/2)
 print(p)
+
+ta = [1,2,3,1]
+j = 1
+if j in ta:
+    print("truq")
+else:
+    print:("nigg")
