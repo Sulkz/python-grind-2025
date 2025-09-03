@@ -20,7 +20,7 @@ class Solution(object):
     def maxProfit(self, prices):
         max_points = 0
         temp_buy = prices[0]
-        for x in (len(prices)):
+        for x in range (len(prices)):
            if prices[x] < temp_buy:
                temp_buy = prices[x]
            else:

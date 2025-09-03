@@ -20,9 +20,17 @@
 # print(Solution.findLeastNumOfUniqueInts([5,5,4],1))
 
 
-coin = [1,2,3]
+def largest_two_digits_from_string(s):
+    maxim = -float("inf")
+    for x in range(len(s)-1):
+        nums = int(s[x:x+2])
+        maxim = max(maxim, nums)
+    return maxim
+        
 
-coin.reverse()
-print(coin)
+print(largest_two_digits_from_string("17129310"))
+
+        
+
 
 
