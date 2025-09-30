@@ -77,4 +77,30 @@ def rotate(nums, k):
         nums.append(item)
     return nums
         
-print(rotate([1,2,3,4,5,6,7],3))
+
+# print(rotate([1,2,3,4,5,6,7],3))
+# import numpy as np
+# grade = np.array([10,20,90])
+# high_grd = np.array([True,False,True])
+# print(grade[~high_grd])
+# class Solution:
+#     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+#         frq = [[] for i in range(len(nums) + 1)]
+#         count  = {}
+#         res =[]
+#         for n in nums:
+#             count[n] = 1 + count.get(n,0)
+#         for n, c in count.items():
+#             frq[c].append(n)
+#         for x in range(len(nums)-1,0,-1):
+#             for i in frq[x]:
+#                 res.append(i)
+#                 if len(res) == k:
+#                     return res
+        
+# print(topKFrequent([1,2,2,3,3,3],1))
+nums = [1,2,3,4]
+arr = [1] * len(nums)
+print(arr)
+
+    
