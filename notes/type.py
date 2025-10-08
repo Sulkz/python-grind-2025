@@ -99,8 +99,15 @@ def rotate(nums, k):
 #                     return res
         
 # print(topKFrequent([1,2,2,3,3,3],1))
-nums = [1,2,3,4]
-arr = [1] * len(nums)
-print(arr)
 
     
+ v
+    res = []
+    for char in s:
+        if char.isalnum():
+            res.append(char.lower())
+    s = "".join(res)
+    return s == s[::-1]
+            
+    
+print(isPalindrome(isPalindrome, "Was it a car or a cat I saw?"))
