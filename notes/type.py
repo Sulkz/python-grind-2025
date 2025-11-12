@@ -1,4 +1,5 @@
-# # from collections import Counter
+from collections import Counter
+import numpy as np
 
 
 # # class Solution(object):
@@ -96,5 +97,47 @@
         
 
 # print(Solution.topKFrequent([1,2,2,3,3,3],1))
+
+    
+def concurrentSubarray(nums):
+
+    if not nums:
+        return 0
+
+    current_len = 0
+
+    for x in range (1, len(nums)):
+        if nums[x] != nums[x -1]:
+            current_len += 0
+        else:
+            current_len += 1
+
+    return current_len
+
+print(concurrentSubarray([1,1,1,1,1,0,1]))
+
+def fleetTest():
+    test = []
+    num = 10
+    print("we are testing this new app")
+    test.append(num)
+    return test
+
+print(fleetTest())
+
+
+def mean_standard_calc(nums):
+    sums = 0
+    for n in nums:
+        sums += n
+    mean = sums/len(nums)
+    st_dv = np.std(nums, ddof=1)
+    if mean >= (mean-(3*st_dv)) and mean <= (mean +(3*st_dv)):
+        return f":0 we correct dawg in range {mean-(3*st_dv)} and {mean +(3*st_dv)} as mean is {mean} and standard {st_dv} "
+    return f":0 we wrong dawg is not in range {mean-(3*st_dv)} and {mean +(3*st_dv)} as mean is {mean} and standard {st_dv} "
+    
+
+print(mean_standard_calc([42,47,59, 27, 84, 49, 72, 43, 73, 59, 58, 82, 50, 79,89, 75, 70, 59, 67, 35]))
+
 
     
