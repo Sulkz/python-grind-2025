@@ -1,5 +1,9 @@
 def sqrt(x: int) -> int:
     l, r = 0, x // 2
+
+    if x < 2:
+        return x
+
     while l <= r:
         mid = l+(r-l)//2
         sq = mid**2

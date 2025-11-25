@@ -137,7 +137,25 @@ def mean_standard_calc(nums):
     return f":0 we wrong dawg is not in range {mean-(3*st_dv)} and {mean +(3*st_dv)} as mean is {mean} and standard {st_dv} "
     
 
-print(mean_standard_calc([42,47,59, 27, 84, 49, 72, 43, 73, 59, 58, 82, 50, 79,89, 75, 70, 59, 67, 35]))
+mean_standard_calc([42,47,59, 27, 84, 49, 72, 43, 73, 59, 58, 82, 50, 79,89, 75, 70, 59, 67, 35])
 
 
+def wow(s: str):
+    arr = []
+    gang = s.split(" ")
+    for word in gang:
+        if len(word) <= 2:
+            first = word.lower()
+            arr.append(first)
+            phrase = " ".join(arr)
+        else:
+            first = word.lower().capitalize()
+            arr.append(first)
+            phrase = " ".join(arr)
+    return phrase
+
+print(wow("First leTTeR of EACH Word"))
+
+
+    
     
