@@ -1,4 +1,4 @@
-from collections import Counter
+from collections import Counter, defaultdict
 import numpy as np
 
 
@@ -157,5 +157,31 @@ def wow(s: str):
 print(wow("First leTTeR of EACH Word"))
 
 
-    
-    
+# edges = [[0,1],[0,2],[1,2],[3,4],[3,5]]
+# res = defaultdict(list)
+# for n1,n2 in edges:
+#     res[n1].append(n2)
+#     res[n2].append(n1)
+# print(res) 
+
+
+
+def duplicateHunt(n):
+    n.sort()
+    max_count = 0
+    count = 0
+    for x in range(len(n)):
+        if (n[x] == n[x-1]):
+            count += 1
+            max_count = max(max_count,count)
+        else:
+            count = 0
+    return max_count
+        
+            
+            
+print(duplicateHunt([1,2,1,1,3,2,4]))
+
+
+s = "ehwhdh"
+print(len(s))
