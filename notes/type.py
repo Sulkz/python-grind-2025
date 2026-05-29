@@ -185,3 +185,21 @@ print(duplicateHunt([1,2,1,1,3,2,4]))
 
 s = "ehwhdh"
 print(len(s))
+
+def topKFrequent( nums: list[int], k: int) -> list[int]:
+    results = []
+    count = {}
+
+    for num in nums:
+        count[num] = count.get(num, 0) + 1
+        
+    print(count)
+    
+    count = sorted(count.items(), key=lambda x: x[1], reverse=True)
+
+    for key, _ in count:
+        results.append(key)
+    return results[:k]
+
+print(topKFrequent([1,2,2,3,3,3],2))
+        
